@@ -1,0 +1,45 @@
+# Article Text Analysis Assignment
+
+## Objective
+
+The objective of this assignment is to extract textual data articles from the given URLs and perform text analysis to compute various variables. The assignment is divided into two main parts: article extraction using URL scraping and text analysis.
+
+## Article Extraction (ArticleScraper)
+
+The `ArticleScraper` class is responsible for extracting articles from URLs provided in an Excel file. It utilizes BeautifulSoup for HTML parsing and the `requests` library for making HTTP requests. Extracted articles are saved as text files in the `extracted_articles` folder.
+
+### Usage
+
+1. Run the script and provide the path to an Excel file containing a column named 'URL' with the URLs of the articles to be scraped.
+
+2. The script will create the `extracted_articles` folder and save the article content as text files within it.
+
+## Text Analysis (ArticleAnalyzer)
+
+The `ArticleAnalyzer` class performs analysis on the content of the extracted articles. Various metrics related to sentiment, readability, word complexity, and more are calculated. The analysis results are stored in an output Excel file named `output_analysis.xlsx`.
+
+### Usage
+
+1. After executing the `ArticleScraper` part, run the script again and provide the same path to the Excel file containing the URLs.
+
+2. The script will perform analysis on the extracted articles and save the results in `output_analysis.xlsx`.
+
+## Requirements
+
+- Python 3.8 or later
+- Libraries: BeautifulSoup, requests, pandas, nltk, textblob, textstat
+
+## Setup
+
+1. Install the required Python libraries using the following command:
+    ``` pip install beautifulsoup4 requests pandas nltk textblob textstat```
+2. Run the script by executing it with Python:
+     ``` python main.py ```
+
+## Note
+
+- Ensure that the provided paths to dictionaries and stopwords are accurate in the script, and the required files are present at those locations.
+
+---
+
+
